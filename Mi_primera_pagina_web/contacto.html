@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">            <!-- Esto sirve para el formato de fuente (poder colocar tildes en letras sin que se vea feo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Esto para que la página sea más legible en celulares y en pc (zoom y esas cosas)-->
+    <title>Contacto</title>       <!--title es para el nombre de la pestaña-->
+</head>
+<body>                          <!--Cuerpo de la página-->
+    <main>   <!--El proposito principal de la pagina-->
+        <h1>Contacto</h1>
+        
+        Nombre: <input type="text" name="nombre" required><br>     <!--Para colocar el nombre-->
+        Correo: <input type="email" name="correo" required><br>   <!--Y el correo-->
+        
+        Tipo de solicitud:
+        <select name="tipo_solicitud" required>        <!--Hacer que el usario tenga un cuadro para elegir si la solicitud es de...-->
+            <option value="Compra">Compra</option>     <!--Compra-->
+            <option value="Venta">Venta</option>      <!--Venta-->
+            <option value="Consulta">Consulta</option>  <!--o consulta-->
+        </select><br>
+        
+        Mensaje:<br>
+        <textarea name="mensaje" rows="4" cols="50" required></textarea><br><br>  <!--UN texto de area de mensaje grande con el nombre mensaje, con rows y cols siendo para ajustar la altitud y la anchura respectivamente-->
+    </main>
+
+    <footer>                     <!--Pie de la página-->
+        Enlaces:
+        <nav>     <!--el <nav> se utiliza para definir una sección de navegación, una seccion como por ejemplo en este caso enlaces-->
+            <ul>     <!--el <ul> se utiliza para listas, más especificamentes listas desordenadas-->
+                <li><a href="index.html">Inicio</a></li>       <!--y el <li> se usa ya para hacer los elementos de la lista-->
+                <li><a href="galeria.html">Galería</a></li>    <!--y el <a href""" es para enlaces-->
+            </ul>
+        </nav>
+        <h6>Dirección: Avenida Brasil 3122</h6> <!--Y esto porque lo pedia la guía-->
+        <h6>Teléfono: +56 9 1932 9312 </h6>
+    </footer>
+</body>
+</html>
